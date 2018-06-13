@@ -1,0 +1,43 @@
+
+$size: 30px; // Tamaño de la cruz
+
+
+.closeCross_capa{ // Capa contenedora
+	width: $size;
+	height: $size;
+	position: relative;
+	cursor: pointer;
+	transition: all, .3s;
+	&:hover{
+		transform: rotate(180deg);
+	}
+}
+
+
+
+// Modificando el height
+// y el border-radius
+// se puede hacer figuras
+//........................
+.closeCross_aspa_1,
+.closeCross_aspa_2{
+	width: $size;
+	height: 2px;
+	background-color: #FF004D;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transition: all, .3s;
+}
+
+
+
+.closeCross_aspa_1{
+	transform: rotate(45deg);
+}
+
+
+
+.closeCross_aspa_2{
+	transform: rotate(-45deg);
+}
